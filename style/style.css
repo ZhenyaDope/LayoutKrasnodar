@@ -313,4 +313,50 @@ body {
   font-size: 14px;
   color: #362828;
 }
+
+.comment {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.comment__title {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.comment .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  width: 32%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comment__title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comment__title img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  margin-right: 30px;
+}
+
+.comment__description {
+  text-align: left;
+  color: #362828;
+}
 /*# sourceMappingURL=style.css.map */
