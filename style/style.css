@@ -278,4 +278,39 @@ body {
   left: 0px;
   top: -15px;
 }
+
+.gallery {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.gallery__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  margin-bottom: 20px;
+}
+
+.gallery__image img {
+  max-width: 100%;
+}
+
+.gallery__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__btn a {
+  font-size: 14px;
+  color: #362828;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+// Секция с галерей
+.gallery{
+    width:100%;
+    padding-bottom: 30px;
+
+    // Обертка для картинок
+    &__wrap{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // Картинки
+    &__image{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:32%;
+        margin-bottom: 20px;
+        img{
+            max-width:100%;
+        }
+    }
+    
+    // Кнопка
+    &__btn{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        a{
+            font-size:14px;
+            color:#362828;
+        }
+    }
+}
