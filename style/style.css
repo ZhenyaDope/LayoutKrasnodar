@@ -1,6 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #571515;
+  position: relative;
+}
+
+.header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.header__top .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.header__top .logo a img {
+  margin-right: 10px;
+}
+
+.header__top .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__top .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+.header__top .menu a:last-child {
+  margin-right: 0px;
+}
+
+.header__top .tel a {
+  text-decoration: none;
+  color: #FAF889;
+  font-weight: bold;
+}
+
+.header__content {
+  position: relative;
+}
+
+.header__content .sculpture {
+  position: absolute;
+  top: -75%;
+  right: 10%;
+}
+
+.header__content .title {
+  font-size: 31px;
+  color: #fff;
+  line-height: 45px;
+  position: relative;
+}
+
+.header__content .title::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background: #fff;
+  top: -40px;
+}
+
+.header__content .description {
+  max-width: 420px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.header__content .btn-cta {
+  padding: 15px 60px;
+  color: #FAF889;
+  background: none;
+  border: 1px solid #FAF889;
+  outline: none;
+  cursor: pointer;
+}
+
+.header__content .btn-cta:hover {
+  opacity: .7;
+  transition: .5s;
+}
+
+.header__bottom {
+  padding-left: 10%;
+  padding-bottom: 50px;
+}
+
+.header .social {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.header .social li {
+  margin-bottom: 25px;
+}
+
+.header .social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .social li:last-child {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,18 @@
+// Обнуление дефолтных стилей.
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+// Подключение шрифта Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+// Подключение модулей стилей
+@import 'grid';
+@import 'header';

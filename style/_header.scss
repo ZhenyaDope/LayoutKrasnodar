@@ -1,0 +1,122 @@
+// Главная страница
+
+.header{
+    width:100%;
+    height: 100vh;
+    background: #571515;
+    position: relative;
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        padding:20px;
+    }
+    // Логотип \ Меню / Телефон
+    &__top{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top:50px;
+        .logo{
+            a{
+                display:flex;
+                align-items: center;
+                text-decoration: none;
+                color: #FFFFFF;
+                font-weight: bold;
+                img{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+        .menu{
+            display:flex;
+            align-items: center;
+            a{
+                text-decoration: none;
+                color:#fff;
+                font-size:15px;
+                margin-right: 40px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .tel{
+            a{
+                text-decoration: none;
+                color:#FAF889;
+                font-weight: bold;
+            }
+        }
+    }
+    // Текст на главной
+    &__content{
+        position: relative;
+        .sculpture{
+            position: absolute;
+            top:-75%;
+            right:10%;
+        }
+        .title{
+            font-size:31px;
+            color:#fff;
+            line-height:45px;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                width:120px;
+                height: 1px;
+                background: #fff;
+                top:-40px;
+            }
+        }
+        .description{
+            max-width: 420px;
+            color:#fff;
+            margin-bottom: 20px;
+        }
+        .btn-cta{
+            padding:15px 60px;
+            color:#FAF889;
+            background: none;
+            border: 1px solid #FAF889;
+            outline:none;
+            cursor: pointer;
+            &:hover{
+                opacity: .7;
+                transition: .5s;
+            }
+        }
+    }
+    // Кнопка вниз
+    &__bottom{
+        padding-left:10%;
+        padding-bottom:50px;
+    }
+
+
+    // Ссылки на соц сети
+    .social{
+        position: absolute;
+        top:40%;
+        left:5%;
+        display:flex;
+        flex-direction: column;
+        list-style: none;
+        li{
+            margin-bottom: 25px;
+            a{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
