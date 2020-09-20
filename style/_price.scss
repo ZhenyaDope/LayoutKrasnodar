@@ -1,0 +1,60 @@
+// Секция с ценами
+.price{
+    width:100%;
+
+    // Слайдер
+    .slider-wrapper{
+        padding:20px;
+
+        // Элементы слайдера
+        .slider-price{
+            display:flex;
+            align-items: center;
+            width:90%;
+            justify-content: space-between;
+            flex-direction: column;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            margin:20px;
+
+            // Картинка
+            img{
+                max-width:100%;
+            }
+
+            // Текст
+            &__title{
+                margin-top:-50px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 80%;
+                height:60px;
+                font-size:18px;
+                font-weight:bold;
+                max-width:80%;
+                background: #FFFFFF;
+                margin-bottom: 40px;
+               
+            }
+            // Цена
+            &__cost{
+                position: relative;
+                font-size:20px;
+                font-weight: bold;
+                padding-bottom:50px;
+                // Горизонтальная черта
+                &::after{
+                    content:'';
+                    position: absolute;
+                    width:100%;
+                    height: 1px;
+                    background: #000;
+                    left:0px;
+                    top:-15px;
+                }
+            }
+        }
+    }
+}
