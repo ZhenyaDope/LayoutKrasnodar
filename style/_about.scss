@@ -1,0 +1,56 @@
+// Страница о нас
+.about{
+    width:100%;
+    // Общий контейнер для текста и картинки
+    &__row{
+        width:100%;
+        display:flex;
+        justify-content: space-between  ;
+        align-items: center;
+        margin-bottom: 80px;
+        // Часть с текстом
+        .text{
+            display:flex;
+            width:48%;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding:50px;
+            &__title{
+                max-width:90%;
+                padding-bottom: 10px;
+            }
+            &__description{
+                font-size:15px;
+                color: #362828;
+                max-width:90%;
+            }
+        }
+        // Часть с картинкой
+        .img{
+            width:48%;
+            img{
+                width:100%;
+            }
+        }
+    }
+    // Зеркальный блок
+    &__row-reverse{
+        flex-direction: row-reverse;
+        width:100%;
+    }
+}
+
+
+
+
+
+
+// Общий стиль ко всем заголовкам блоков.
+// TODO надо вынести в общий файл
+
+.title-heading{
+    text-align: center;
+    padding-top:100px;
+    padding-bottom: 60px;
+}
