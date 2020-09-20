@@ -194,4 +194,33 @@ body {
   padding-top: 100px;
   padding-bottom: 60px;
 }
+
+.advantage {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.advantage .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage .row__item {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.advantage .row__item img {
+  padding-bottom: 20px;
+}
+
+.advantage .row__item p {
+  text-align: center;
+  font-size: 13px;
+  color: #362828;
+}
 /*# sourceMappingURL=style.css.map */

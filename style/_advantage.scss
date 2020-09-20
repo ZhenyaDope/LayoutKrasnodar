@@ -1,0 +1,29 @@
+// Секция с приемуществами
+.advantage{
+    padding-top:30px;
+    width:100%;
+    // Контейнер для всех элементов
+    .row{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        // Элемент приемущества
+        &__item{
+            display:flex;
+            width:20%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            // Картинка
+            img{
+                padding-bottom: 20px;
+            }
+            // Текст
+            p{
+                text-align: center;
+                font-size:13px;
+                color:#362828;
+            }
+        }
+    }
+}
