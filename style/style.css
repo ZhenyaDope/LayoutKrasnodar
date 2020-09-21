@@ -76,8 +76,9 @@ body {
 
 .header__content .sculpture {
   position: absolute;
-  top: -75%;
-  right: 10%;
+  width: 30%;
+  top: -25%;
+  right: 15%;
 }
 
 .header__content .title {
@@ -124,7 +125,7 @@ body {
 .header .social {
   position: absolute;
   top: 40%;
-  left: 5%;
+  left: 2%;
   display: flex;
   flex-direction: column;
   list-style: none;
