@@ -54,11 +54,13 @@
     // Текст на главной
     &__content{
         position: relative;
+
+        // Скульптура
         .sculpture{
             position: absolute;
             width:30%;
-            top:-25%;
-            right:15%;
+            top:-20%;
+            right:10%;
         }
         .title{
             font-size:31px;
