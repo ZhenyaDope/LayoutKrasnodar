@@ -450,12 +450,19 @@
     <!-- Модальное окно -->
 
     <div id="modalForm" class="modal">
-        <form action="#">
+        <form>
+
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="3D изделия из пенопласта">
+            <input type="hidden" name="admin_email" value="zhenyadope@gmail.com">
+            <input type="hidden" name="form_subject" value="Form Subject">
+            <!-- END Hidden Required Fields -->
+
             <h3>Получить консультацию</h3>
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Телефон">
+            <input name="Имя" type="text" placeholder="Имя">
+            <input name="Телефон" type="text" placeholder="Телефон">
             <label for="modal-comment">Комментарий</label>
-            <textarea name="modal-comment" id="modal-comment" cols="30" rows="10"></textarea>
+            <textarea name="Комментарий" name="modal-comment" id="modal-comment" cols="30" rows="10"></textarea>
             <button class="btn btn-submit-modal">Отправить</button>
             <a id="closeModal" class="close-modal" href="#"></a>
         </form>
