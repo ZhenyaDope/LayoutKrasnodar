@@ -31,3 +31,36 @@ const closeModal = () => {
 
 btnOpenModal.addEventListener('click', openModal);
 btnCloseModal.addEventListener('click',closeModal);
+
+
+
+
+
+// Плавный скролл 
+
+
+// Якоря меню к секциям
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+    
+
+// Якорь стрелки к след блоку
+$(document).ready(function(){
+    $("#arrow-down").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+
+
+
+    

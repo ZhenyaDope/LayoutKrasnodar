@@ -20,7 +20,12 @@
         margin-bottom: 20px;
         img{
             max-width:100%;
+            &:hover{
+                transform: scale(1.1);
+                transition: all .3s;
+            }
         }
+        
     }
     
     // Кнопка
