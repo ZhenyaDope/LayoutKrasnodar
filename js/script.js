@@ -28,6 +28,23 @@ $('.slider-wrapper').slick({
 });
 
 
+// Меню
+
+const menu = document.getElementById('modalMenu');
+const btnOpenMenu = document.getElementById('openMenu');
+const btnCloseMenu = document.getElementById('closeMenu');
+
+
+const openMenu = () => {
+    menu.style.right = '0px';
+}
+const closeMenu = () => {
+    menu.style.right = '-5000px';
+}
+
+btnOpenMenu.addEventListener('click', openMenu);
+btnCloseMenu.addEventListener('click', closeMenu);
+
 
 // Модальное окно
 
@@ -75,6 +92,19 @@ $(document).ready(function(){
     });
 });
 
+
+
+// Меню
+
+$(document).ready(function(){
+    $("#modalMenu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+        closeMenu();
+    });
+});
 
 
 

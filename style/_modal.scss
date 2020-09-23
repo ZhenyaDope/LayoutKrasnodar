@@ -9,7 +9,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s;
+    transition: all .5s;
     form{
         display:flex;
         align-items: center;
@@ -61,5 +61,64 @@
             background-repeat: no-repeat;
         }
 
+    }
+}
+
+
+
+// Медиа запросы \ Адаптив
+
+@media (max-width:991px){
+    .modal{
+        form{
+            padding:25px;
+            h3{
+                font-size:20px;
+                padding-bottom: 20px;
+            }
+            input{
+                width:90%;
+                margin-bottom: 15px;
+            }
+            textarea{
+                margin-bottom: 10px;
+                width:100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .modal{
+        form{
+            padding:10px;
+            h3{
+                font-size:16px;
+                padding-bottom: 20px;
+            }
+            input{
+                width:80%;
+                font-size:12px;
+                margin-bottom: 10px;
+            }
+            label{
+                padding-left:10px;
+            }
+            textarea{
+                margin-bottom: 10px;
+                width:90%;
+                font-size:12px;
+            }
+            .btn-submit-modal{
+                padding:10px 30px;
+            }
+            .close-modal{
+                right: -30px;
+                width:20px;
+                height: 20px;
+                
+            }
+        }
     }
 }
