@@ -39,3 +39,16 @@
         }
     }
 }
+
+// Медиа запросы \ Адаптив
+
+@media (max-width:991px){
+    .gallery{
+        &__wrap{
+            flex-wrap: wrap;
+        }
+        &__image{
+            width:48%;
+        }
+    }
+}

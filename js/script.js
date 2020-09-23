@@ -1,6 +1,16 @@
 
+
+
 // Количество карточек которые будут оборажаться в слайдере с ценами
 let priceCardValue = 3;
+
+
+// Адаптив
+
+if(document.documentElement.clientWidth < 991){
+    priceCardValue = 2;
+    console.log(document.documentElement.clientWidth)
+}
 
 
 // Слайдер цен

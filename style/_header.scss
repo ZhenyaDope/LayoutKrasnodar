@@ -54,12 +54,12 @@
     // Текст на главной
     &__content{
         position: relative;
-
         // Скульптура
         .sculpture{
             position: absolute;
             width:30%;
-            top:-20%;
+            height:auto;
+            top:-30%;
             right:10%;
         }
         .title{
@@ -121,4 +121,28 @@
             }
         }
     }
+}
+
+
+
+// Медиа запросы \ Адаптив
+
+
+@media (max-width:991px){
+    .header{
+        &__top{
+            .menu{
+                display:none;
+            }
+        }
+        &__content{
+            .sculpture{
+                top:50%;
+            }
+        }
+        .title{
+            margin-top:-30%;
+        }
+    }
+    
 }

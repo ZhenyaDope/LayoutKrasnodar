@@ -27,3 +27,17 @@
         }
     }
 }
+
+// Медиа запросы \ Адаптив
+
+@media (max-width:991px){
+    .advantage{
+        .row{
+            flex-wrap: wrap;
+            &__item{
+                width:40%;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}

@@ -119,3 +119,17 @@
         }
     }
 }
+
+
+// Медиа запросы \ Адаптив
+
+
+@media (max-width:991px){
+    .footer{
+        &__address{
+            .map{
+                display:none;
+            }
+        }
+    }
+}

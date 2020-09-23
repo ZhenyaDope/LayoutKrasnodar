@@ -42,10 +42,6 @@
 }
 
 
-
-
-
-
 // Общий стиль ко всем заголовкам блоков.
 // TODO надо вынести в общий файл
 
@@ -53,4 +49,40 @@
     text-align: center;
     padding-top:100px;
     padding-bottom: 60px;
+}
+
+
+// Медиа запросы \ Адаптив
+
+@media (max-width:991px){
+    .about{
+        &__row{
+            flex-direction: column;
+            width:100%;
+            align-items: center;
+            .text{
+                width:100%;
+                padding:0px;
+                align-items: center;
+                text-align: center;
+                &__title{
+                    text-align: start;
+                    width:100%;
+                    padding:0px;
+                    padding-bottom: 30px;
+                }
+                &__description{
+                    width:100%;
+                    text-align: start;
+                    padding-bottom: 20px;
+                }
+            }
+            .img{
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
 }
