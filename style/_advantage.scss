@@ -2,6 +2,8 @@
 .advantage{
     padding-top:30px;
     width:100%;
+
+   
     // Контейнер для всех элементов
     .row{
         width:100%;
@@ -36,7 +38,20 @@
             flex-wrap: wrap;
             &__item{
                 width:40%;
-                padding-bottom: 50px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .advantage{
+        .row{
+            &__item{
+               p{
+                font-size:12px;
+               }
             }
         }
     }

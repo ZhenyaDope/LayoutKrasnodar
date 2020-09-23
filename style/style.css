@@ -21,6 +21,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
 .header {
   width: 100%;
   height: 100vh;
@@ -164,6 +170,18 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .header {
+    overflow: hidden;
+  }
+  .header .social {
+    display: none;
+  }
+  .header .sculpture {
+    top: 100%;
+  }
+}
+
 .about {
   width: 100%;
 }
@@ -173,7 +191,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .about__row .text {
@@ -212,7 +230,7 @@ body {
 .title-heading {
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 991px) {
@@ -231,18 +249,55 @@ body {
     text-align: start;
     width: 100%;
     padding: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   .about__row .text__description {
     width: 100%;
     text-align: start;
     padding-bottom: 20px;
   }
-  .about__row .img {
+  .about__row .image {
     width: 100%;
   }
-  .about__row .img img {
+  .about__row .image img {
     width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__row {
+    width: 100%;
+  }
+  .about__row .text {
+    width: 100%;
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+  }
+  .about__row .text__title {
+    font-size: 15px;
+    text-align: start;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 30px;
+  }
+  .about__row .text__description {
+    font-size: 14px;
+    width: 100%;
+    text-align: start;
+    padding-bottom: 20px;
+  }
+  .about__row .image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .about__row .image img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -281,12 +336,23 @@ body {
   }
   .advantage .row__item {
     width: 40%;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantage .row__item p {
+    font-size: 12px;
   }
 }
 
 .price {
   width: 100%;
+}
+
+.price__title {
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .price .slider-wrapper {
@@ -323,11 +389,25 @@ body {
   margin-bottom: 40px;
 }
 
+.price .slider-wrapper .slider-price .btn-price {
+  background: #571515;
+  margin-bottom: 50px;
+  padding: 15px 50px;
+  border: none;
+  color: #fff;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.price .slider-wrapper .slider-price .btn-price:hover {
+  opacity: .9;
+}
+
 .price .slider-wrapper .slider-price__cost {
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .price .slider-wrapper .slider-price__cost::after {
@@ -338,6 +418,35 @@ body {
   background: #000;
   left: 0px;
   top: -15px;
+}
+
+@media (max-width: 991px) {
+  .price {
+    width: 100%;
+  }
+  .price__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .price .slider-wrapper .slider-price__title {
+    font-size: 14px;
+  }
+  .price .slider-wrapper .slider-price__cost {
+    font-size: 16px;
+  }
+  .price .slider-wrapper .slider-price__cost::after {
+    top: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    width: 100%;
+  }
+  .price__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .gallery {
@@ -435,13 +544,26 @@ body {
   color: #362828;
 }
 
-.comment .container {
-  flex-wrap: wrap;
+@media (max-width: 991px) {
+  .comment .container {
+    flex-wrap: wrap;
+  }
+  .comment__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
-.comment__item {
-  width: 100%;
-  margin-bottom: 40px;
+@media (max-width: 768px) {
+  .comment__title {
+    font-size: 18px;
+  }
+  .comment__title img {
+    margin-right: 10px;
+  }
+  .comment__description {
+    font-size: 14px;
+  }
 }
 
 .footer {
@@ -559,6 +681,15 @@ body {
 @media (max-width: 991px) {
   .footer__address .map {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer__form {
+    margin-bottom: 30px;
   }
 }
 

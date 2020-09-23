@@ -7,7 +7,7 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         // Часть с текстом
         .text{
             display:flex;
@@ -48,7 +48,7 @@
 .title-heading{
     text-align: center;
     padding-top:100px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 
@@ -69,7 +69,7 @@
                     text-align: start;
                     width:100%;
                     padding:0px;
-                    padding-bottom: 30px;
+                    padding-bottom: 10px;
                 }
                 &__description{
                     width:100%;
@@ -77,10 +77,52 @@
                     padding-bottom: 20px;
                 }
             }
-            .img{
+            .image{
                 width:100%;
                 img{
                     width:100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:768px){
+    .about{
+        &__row{
+            width:100%;
+            .text{
+                width:100%;
+                padding:0px;
+                
+                align-items: center;
+                text-align: center;
+                &__title{
+                    font-size:15px;     
+                    text-align: start;
+                    width:100%;
+                    padding:0px;
+                    padding-bottom: 30px;
+                }
+                &__description{
+                    font-size:14px; 
+                    width:100%;
+                    text-align: start;
+                    padding-bottom: 20px;
+                }
+            }
+            .image{
+                width:90%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height:auto;
                 }
             }
         }

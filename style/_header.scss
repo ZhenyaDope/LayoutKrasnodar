@@ -129,6 +129,7 @@
 
 
 @media (max-width:991px){
+    
     .header{
         &__top{
             .menu{
@@ -145,4 +146,17 @@
         }
     }
     
+}
+
+
+@media (max-width:768px){
+    .header{
+        overflow: hidden;
+        .social{
+            display:none;
+        }
+        .sculpture{
+            top:100%;
+        }
+    }
 }

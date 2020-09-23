@@ -133,3 +133,17 @@
         }
     }
 }
+
+
+
+@media (max-width:768px){
+    .footer{
+        .container{
+            flex-direction: column;
+        }
+        &__form{
+            margin-bottom: 30px;
+        }
+    }
+}
+

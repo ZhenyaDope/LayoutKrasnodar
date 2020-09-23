@@ -11,6 +11,11 @@ if(document.documentElement.clientWidth < 991){
     priceCardValue = 2;
     console.log(document.documentElement.clientWidth)
 }
+if(document.documentElement.clientWidth < 768){
+    priceCardValue = 1;
+    console.log(document.documentElement.clientWidth)
+}
+
 
 
 // Слайдер цен
