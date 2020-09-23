@@ -52,3 +52,14 @@
         }
     }
 }
+
+@media (max-width:500px){
+    .gallery{
+        &__wrap{
+            flex-wrap: wrap;
+        }
+        &__image{
+            width:100%;
+        }
+    }
+}

@@ -114,3 +114,31 @@
         
     }
 }
+
+
+@media (max-width:375px){
+    .price{
+        width:100%;
+    
+        &__title{
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        .slider-wrapper{
+            .slider-price{
+                &__title{
+                    font-size:12px;
+                    margin-bottom: 20px;
+                }
+                &__cost{
+                    font-size:14px;
+                }
+                .btn-price{
+                    margin-bottom: 30px;
+                    padding:10px 25px;
+                    font-size:12px;
+                }
+            }
+        }
+    }
+}

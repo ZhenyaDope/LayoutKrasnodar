@@ -186,4 +186,71 @@
             }
         }
     }
+}
+
+
+
+@media (max-width:500px){
+    .header{
+        &__top{
+            flex-wrap: wrap;
+        }
+        .menu-btn{
+            order: 1;
+        }
+        .tel{
+            margin-top:20px;
+            order:2;
+        }
+        .social{
+            display:none;
+        }
+        .sculpture{
+            max-width:50%;
+            top:170px;
+            right:30px;
+            
+        }
+
+        &__content{
+            .title{
+                font-size:24px;
+                &::before{
+                    top: -10px;
+                }
+            }
+            .description{
+                font-size:14px;
+            }
+            .btn-cta{
+                padding:10px 40px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px){
+    .header{
+        .sculpture{
+            max-width:50%;
+            top:160px;
+            right:30px;
+            
+        }
+
+        &__content{
+            .title{
+                font-size:18px;
+                &::before{
+                    top: -10px;
+                }
+            }
+            .description{
+                font-size:14px;
+            }
+            .btn-cta{
+                padding:10px 40px;
+            }
+        }
+    }
 };
