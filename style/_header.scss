@@ -50,6 +50,9 @@
                 font-weight: bold;
             }
         }
+        .menu-btn{
+            display: none;
+        }
     }
     // Текст на главной
     &__content{
@@ -135,16 +138,21 @@
             .menu{
                 display:none;
             }
+            .menu-btn{
+                display: block;
+            }
         }
         &__content{
             .sculpture{
                 top:-50px;
+                right:10px;
                 width:40%;
             }
         }
         .title{
             margin-top:-30%;
         }
+
     }
     
 }
@@ -157,7 +165,25 @@
             display:none;
         }
         .sculpture{
-            top:100%;
+            max-width:35%;
+            top:40px;
+            right:30px;
+            
+        }
+
+        &__content{
+            .title{
+                font-size:24px;
+                &::before{
+                    top: -10px;
+                }
+            }
+            .description{
+                font-size:14px;
+            }
+            .btn-cta{
+                padding:10px 40px;
+            }
         }
     }
-}
+};

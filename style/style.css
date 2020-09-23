@@ -82,6 +82,10 @@ body {
   font-weight: bold;
 }
 
+.header__top .menu-btn {
+  display: none;
+}
+
 .header__content {
   position: relative;
 }
@@ -162,8 +166,12 @@ body {
   .header__top .menu {
     display: none;
   }
+  .header__top .menu-btn {
+    display: block;
+  }
   .header__content .sculpture {
     top: -50px;
+    right: 10px;
     width: 40%;
   }
   .header .title {
@@ -179,7 +187,21 @@ body {
     display: none;
   }
   .header .sculpture {
-    top: 100%;
+    max-width: 35%;
+    top: 40px;
+    right: 30px;
+  }
+  .header__content .title {
+    font-size: 24px;
+  }
+  .header__content .title::before {
+    top: -10px;
+  }
+  .header__content .description {
+    font-size: 14px;
+  }
+  .header__content .btn-cta {
+    padding: 10px 40px;
   }
 }
 
@@ -230,7 +252,7 @@ body {
 
 .title-heading {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 
@@ -452,7 +474,6 @@ body {
 
 .gallery {
   width: 100%;
-  padding-bottom: 30px;
 }
 
 .gallery__wrap {
@@ -522,12 +543,11 @@ body {
   border: 1px solid #cccccc;
   padding: 20px;
   width: 32%;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .comment__title {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 20px;
   font-weight: bold;
   font-size: 18px;

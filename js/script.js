@@ -34,7 +34,6 @@ const menu = document.getElementById('modalMenu');
 const btnOpenMenu = document.getElementById('openMenu');
 const btnCloseMenu = document.getElementById('closeMenu');
 
-
 const openMenu = () => {
     menu.style.right = '0px';
 }
@@ -51,6 +50,9 @@ btnCloseMenu.addEventListener('click', closeMenu);
 const btnOpenModal = document.getElementById('openModal');
 const btnCloseModal = document.getElementById('closeModal');
 const modalWindow = document.getElementById('modalForm');
+const btnPriceOpenModal = document.querySelectorAll('.btn-price');
+
+
 
 const openModal = () => {
     modalWindow.style.left = '0px';
@@ -59,7 +61,9 @@ const openModal = () => {
 const closeModal = () => {
     modalWindow.style.left = '-5000px';
 }
-
+btnPriceOpenModal.forEach(e=>{
+    e.addEventListener('click',openModal);
+})
 
 btnOpenModal.addEventListener('click', openModal);
 btnCloseModal.addEventListener('click',closeModal);
